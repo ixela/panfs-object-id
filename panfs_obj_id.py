@@ -16,8 +16,8 @@ args = parser.parse_args()
 print args.hosts
 hostlist = ['192.168.200.10', '192.168.200.20', '192.168.200.30', '192.168.200.40', '192.168.200.50']
 def mail_function(message):
-   me = "root@mds1.asc.edu"
-   you = "mwillson@asc.edu"
+   me = "foo@you.com"
+   you = "you@foo.com"
    message = "Top 5 files in use:\n" + message
    msg = MIMEText(message)
    msg['Subject'] = "Panfs file usage"
